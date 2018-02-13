@@ -15,8 +15,9 @@ public class MyAmazingBot extends TelegramLongPollingBot {
             String message_text = update.getMessage().getText();
             long chat_id = update.getMessage().getChatId();
 
-            LOGGER.info(update.getMessage().getContact().getFirstName() + " "
-                    + update.getMessage().getContact().getFirstName() + " " +
+            LOGGER.info(update.getMessage().getFrom().getUserName() != null ? update.getMessage().getFrom().getUserName() : ""  +" " +
+                    update.getMessage().getFrom().getFirstName() != null ? update.getMessage().getFrom().getFirstName() : "" +" " +
+                    update.getMessage().getFrom().getLastName() != null ? update.getMessage().getFrom().getLastName() : ""  +" " +
                     message_text.split("\n")[0]
             );
 
