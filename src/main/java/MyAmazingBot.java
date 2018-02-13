@@ -3,7 +3,10 @@ import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 
+import java.util.logging.Logger;
+
 public class MyAmazingBot extends TelegramLongPollingBot {
+    private static Logger LOGGER = Logger.getLogger(MyAmazingBot.class.getName());
     public void onUpdateReceived(Update update) {
 
         // We check if the update has a message and the message has text
@@ -11,6 +14,11 @@ public class MyAmazingBot extends TelegramLongPollingBot {
             // Set variables
             String message_text = update.getMessage().getText();
             long chat_id = update.getMessage().getChatId();
+
+            LOGGER.info(update.getMessage().getContact().getFirstName() + " "
+                    + update.getMessage().getContact().getFirstName() + " " +
+                    message_text.split("\n")[0]
+            );
 
             if (message_text.equals("привет")) {
                 message_text = "привет!";
