@@ -12,6 +12,10 @@ public class MyAmazingBot extends TelegramLongPollingBot {
             String message_text = update.getMessage().getText();
             long chat_id = update.getMessage().getChatId();
 
+            if (message_text.equals("привет")) {
+                message_text = "привет!";
+            }
+
             SendMessage message = new SendMessage() // Create a message object object
                     .setChatId(chat_id)
                     .setText(message_text);
