@@ -1,1 +1,14 @@
 language: java
+
+cache:
+directories:
+- $HOME/.m2
+
+jdk:
+- oraclejdk8
+
+provider: openshift
+  user: iololoiev
+  password: ${PSWDO}
+  domain: console.starter-ca-central-1.openshift.com
+  app: echo-bot
