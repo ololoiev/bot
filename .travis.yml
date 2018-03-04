@@ -15,5 +15,5 @@ deploy:
   user: iololoiev
   password:
     secure: "ZgZuVv3XQBWKWMJ4G3CeeWelhrhstLtmw/HF2MENntfJFwqJO3GMFbUcg/rL35b8CizFWOncRWBzAFKmOs1DqRIqR17CA64J1xyMOD3fyWVXKhZL3J0sBQDA8KSmCtkFZKaZkNQdZr0qOIVAF6VgV1NVgeNxVyRt6TFdyX2rOvht3An2nY+NKu41FmhCTzFiPsoVIYwU87zWgi+sE/R4CnBoA8ROcaUIJHCES4o8f/p1FEpkHehKa9HaLfk5OxxS13hkCctj6uR81oX4x73UZtYxtm3SWQAF7teeagQoy35/RN+CPZv+2+IH4T0VOFOSa1aQV5qBZkSS55WU+8sPAT/GsSaX9PxsC8X8ekzPjFmfRXRYwvjgB3DvAs6kAEUcV9kasdpvpv5MAOz8kHk+ZrX2tVSbjKg3mLPBzltU/evSpdC4LX6tuKDxBptzdLFNYzsTeiP8JP90Lp7+3MjEC0ivs0T+o5A6w3I6xi+6nalXMW0qYjd6EXgk5+CYfcr66a0Taw9BcsaI1DS5hZ30oDv+7rTOJT7VmdSevR+HmnCUcWbaNphd8GXnfNcM3Cj1Mft/dd4x7qxmSLLtF4VxBqZnIbDCYHrAKbTl5mz57DVJgO6KRcuZDxnt1y79KxjOJt8fwoBcNzwBxnpeU3v1qGfTMhbsmqUIwZDpeng9fRc="
-    domain: console.starter-ca-central-1.openshift.com
+  domain: console.starter-ca-central-1.openshift.com
   app: echo-bot
