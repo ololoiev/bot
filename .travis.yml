@@ -18,5 +18,4 @@ deploy:
   domain: console.starter-ca-central-1.openshift.com
   app: echo-bot
   on:
-    repo: ololoiev/bot
     master
